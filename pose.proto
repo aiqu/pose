@@ -1,0 +1,19 @@
+syntax="proto3";
+
+message Pose {
+  Point3 translation = 1;
+  Quaternion rotation = 2;
+}
+
+message Point3 {
+  float x = 1;
+  float y = 2;
+  float z = 3;
+}
+
+message Quaternion {
+  float qw = 1;
+  float qx = 2;
+  float qy = 3;
+  float qz = 4;
+}
