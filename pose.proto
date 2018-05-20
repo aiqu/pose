@@ -1,5 +1,7 @@
 syntax="proto3";
 
+package aiqu;
+
 message Pose {
   Point3 translation = 1;
   Quaternion rotation = 2;

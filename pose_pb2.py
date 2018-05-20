@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='pose/pose.proto',
-  package='',
+  package='aiqu',
   syntax='proto3',
-  serialized_pb=_b('\n\x0fpose/pose.proto\"C\n\x04Pose\x12\x1c\n\x0btranslation\x18\x01 \x01(\x0b\x32\x07.Point3\x12\x1d\n\x08rotation\x18\x02 \x01(\x0b\x32\x0b.Quaternion\")\n\x06Point3\x12\t\n\x01x\x18\x01 \x01(\x02\x12\t\n\x01y\x18\x02 \x01(\x02\x12\t\n\x01z\x18\x03 \x01(\x02\"<\n\nQuaternion\x12\n\n\x02qw\x18\x01 \x01(\x02\x12\n\n\x02qx\x18\x02 \x01(\x02\x12\n\n\x02qy\x18\x03 \x01(\x02\x12\n\n\x02qz\x18\x04 \x01(\x02\x62\x06proto3')
+  serialized_pb=_b('\n\x0fpose/pose.proto\x12\x04\x61iqu\"M\n\x04Pose\x12!\n\x0btranslation\x18\x01 \x01(\x0b\x32\x0c.aiqu.Point3\x12\"\n\x08rotation\x18\x02 \x01(\x0b\x32\x10.aiqu.Quaternion\")\n\x06Point3\x12\t\n\x01x\x18\x01 \x01(\x02\x12\t\n\x01y\x18\x02 \x01(\x02\x12\t\n\x01z\x18\x03 \x01(\x02\"<\n\nQuaternion\x12\n\n\x02qw\x18\x01 \x01(\x02\x12\n\n\x02qx\x18\x02 \x01(\x02\x12\n\n\x02qy\x18\x03 \x01(\x02\x12\n\n\x02qz\x18\x04 \x01(\x02\x62\x06proto3')
 )
 
 
@@ -27,20 +27,20 @@ DESCRIPTOR = _descriptor.FileDescriptor(
 
 _POSE = _descriptor.Descriptor(
   name='Pose',
-  full_name='Pose',
+  full_name='aiqu.Pose',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='translation', full_name='Pose.translation', index=0,
+      name='translation', full_name='aiqu.Pose.translation', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='rotation', full_name='Pose.rotation', index=1,
+      name='rotation', full_name='aiqu.Pose.rotation', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -58,34 +58,34 @@ _POSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19,
-  serialized_end=86,
+  serialized_start=25,
+  serialized_end=102,
 )
 
 
 _POINT3 = _descriptor.Descriptor(
   name='Point3',
-  full_name='Point3',
+  full_name='aiqu.Point3',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='x', full_name='Point3.x', index=0,
+      name='x', full_name='aiqu.Point3.x', index=0,
       number=1, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='y', full_name='Point3.y', index=1,
+      name='y', full_name='aiqu.Point3.y', index=1,
       number=2, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='z', full_name='Point3.z', index=2,
+      name='z', full_name='aiqu.Point3.z', index=2,
       number=3, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
@@ -103,41 +103,41 @@ _POINT3 = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=88,
-  serialized_end=129,
+  serialized_start=104,
+  serialized_end=145,
 )
 
 
 _QUATERNION = _descriptor.Descriptor(
   name='Quaternion',
-  full_name='Quaternion',
+  full_name='aiqu.Quaternion',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='qw', full_name='Quaternion.qw', index=0,
+      name='qw', full_name='aiqu.Quaternion.qw', index=0,
       number=1, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='qx', full_name='Quaternion.qx', index=1,
+      name='qx', full_name='aiqu.Quaternion.qx', index=1,
       number=2, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='qy', full_name='Quaternion.qy', index=2,
+      name='qy', full_name='aiqu.Quaternion.qy', index=2,
       number=3, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='qz', full_name='Quaternion.qz', index=3,
+      name='qz', full_name='aiqu.Quaternion.qz', index=3,
       number=4, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
@@ -155,8 +155,8 @@ _QUATERNION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=131,
-  serialized_end=191,
+  serialized_start=147,
+  serialized_end=207,
 )
 
 _POSE.fields_by_name['translation'].message_type = _POINT3
@@ -169,21 +169,21 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 Pose = _reflection.GeneratedProtocolMessageType('Pose', (_message.Message,), dict(
   DESCRIPTOR = _POSE,
   __module__ = 'pose.pose_pb2'
-  # @@protoc_insertion_point(class_scope:Pose)
+  # @@protoc_insertion_point(class_scope:aiqu.Pose)
   ))
 _sym_db.RegisterMessage(Pose)
 
 Point3 = _reflection.GeneratedProtocolMessageType('Point3', (_message.Message,), dict(
   DESCRIPTOR = _POINT3,
   __module__ = 'pose.pose_pb2'
-  # @@protoc_insertion_point(class_scope:Point3)
+  # @@protoc_insertion_point(class_scope:aiqu.Point3)
   ))
 _sym_db.RegisterMessage(Point3)
 
 Quaternion = _reflection.GeneratedProtocolMessageType('Quaternion', (_message.Message,), dict(
   DESCRIPTOR = _QUATERNION,
   __module__ = 'pose.pose_pb2'
-  # @@protoc_insertion_point(class_scope:Quaternion)
+  # @@protoc_insertion_point(class_scope:aiqu.Quaternion)
   ))
 _sym_db.RegisterMessage(Quaternion)
 
